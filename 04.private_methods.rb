@@ -1,4 +1,4 @@
-class GoodDog
+ class GoodDog
   DOG_YEARS = 7
 
   attr_accessor :name, :age
