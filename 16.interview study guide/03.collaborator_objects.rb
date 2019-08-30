@@ -18,6 +18,11 @@ end
 mr_bill = Teacher.new('Bill')
 physics = Course.new(mr_bill, [])
 
+
+# Objects that are stored as state within another object are also called 
+# "collaborator objects".
+
+
 # Collaborator objects represent the connections between various actors 
 # in your program. 
 
