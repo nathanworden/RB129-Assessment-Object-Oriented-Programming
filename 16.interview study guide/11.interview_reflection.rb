@@ -2,7 +2,13 @@
 # is printed to the screen.
 
 class Animal
+  def self.info
+    "I am a #{self}"
+  end
 
+  def rex
+    self
+  end
 end
 
 # You cannot edit anything below this line
@@ -23,7 +29,7 @@ class Pet < Animal
   end
 end
 
-class GarbonzoBean < Pet
+class Dog < Pet
 
   def introduce
     "#{self.class.info} and they call me #{rex.nickname}. Woof woof!"
@@ -36,7 +42,7 @@ end
 # puts fluffy == new_fluffy   # false
 # puts fluffy == fluffy       # true
 
-rex = GarbonzoBean.new("Rex")
+rex = Dog.new("Rex")
 # binding.pry
 puts rex.introduce # Expected output: I am a Dog and they call me Rex. Woof woof!
 
